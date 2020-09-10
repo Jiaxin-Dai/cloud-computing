@@ -1,0 +1,7 @@
+CXXFLAGS = -O2 -lpthread#debug
+CXX = g++
+RM = /bin/rm -f
+all:
+	g++ -O2  hw.cpp  -o hw -lpthread
+clean:
+	${RM} *.o dummy* hw
